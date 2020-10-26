@@ -30,15 +30,13 @@ equalsBtn.addEventListener("click", function () {
   operationSelected();
   if(mathFunc == divide && secondInput == 0){
     firstInput = "Infinity";
-    updateCurrentValues();
   } else if (mathFunc == multiply && secondInput == 0){
     firstInput = 0;
-    updateCurrentValues();
   }
   if (secondInput) {
     firstInput = operate(firstInput, secondInput, mathFunc);
-    updateCurrentValues();
   }
+  updateCurrentValues();
 });
 
 window.addEventListener("keyup",function(e){
@@ -164,6 +162,8 @@ function updateCurrentValues() {
   secondInput = undefined;
   currentValueIndicator.textContent = firstInput;
   input.textContent = firstInput;
+  operationSelected = undefined;
+  mode.textContent = "";
 }
 
 const add = (a, b) => {
