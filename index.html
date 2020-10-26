@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/calculator-favicon.png"
+    />
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <p class="current-value"></p>
+        <p class="mode"></p>
+        <div class="input-screen">
+            <p class="input-number">0</p>
+        </div>
+        <div class="button-grid">
+            <button data-key="none" class="clear" type="button">AC</button>
+            <button data-key="Backspace" class="backspace" type="button">&#8592;</button>
+            <button class="percent" type="button">%</button>
+            <button data-key="/" class="divide" type="button">&#247;</button>
+            <button data-key="7" class="number" type="button" value="7">7</button>
+            <button data-key="8" class="number" type="button" value="8">8</button>
+            <button data-key="9" class="number" type="button" value="9">9</button>
+            <button data-key="*" class="multiply" type="button">&#10005</button>
+            <button data-key="4" class="number" type="button" value="4">4</button>
+            <button data-key="5" class="number" type="button" value="5">5</button>
+            <button data-key="6" class="number" type="button" value="6">6</button>
+            <button data-key="-" class="subtract" type="button">&#8722;</button>
+            <button data-key="1" class="number" type="button" value="1">1</button>
+            <button data-key="2" class="number" type="button" value="2">2</button>
+            <button data-key="3" class="number" type="button" value="3">3</button>
+            <button data-key="+" class="add" type="button">&#x2b;</button>
+            <button data-key="0" class="number" type="button" value="0">0</button>
+            <button data-key="." class="dot" type="button">.</button>
+            <button data-key="Enter" class="equals" type="button">=</button>
+        </div>
+    </div>
+</body>
+</html>
